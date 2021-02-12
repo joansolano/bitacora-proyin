@@ -3,7 +3,7 @@
         <v-container>
             <v-row align="center" justify="center" wrap> 
                 <v-col cols="12" align="center" justify="center">
-                    <p class="text-h4 text-sm-h5 text-md-h4 text-xl-h3">Bitácora</p>
+                    <p class="text-h4 text-sm-h5 text-md-h4 text-lg-h3 font-weight-bold">Bitácora</p>
                 </v-col>
             </v-row>
             <v-row justify="center">
@@ -28,7 +28,13 @@
                                     :style="{ width: '100%', height: '100%' }"
                                     :class="nameClass"
                                 >
-                                <v-card-title v-text="article.title" class="text-h5 text-xl-h3"></v-card-title>
+                                <v-card-title 
+                                    v-text="article.title" 
+                                    class="text-h5 text-xl-h3"
+                                    :style="{
+                                        color: '#128F0E'
+                                    }"
+                                ></v-card-title>
                                 <v-card-subtitle v-text="article.description" class="text-subtitle-1 text-xl-h6 mt-2"></v-card-subtitle>
                                 <v-card-actions>
                                     <v-btn
@@ -56,6 +62,7 @@ import getArticles from '~/utils/getArticles'
 import lazyLoad from '~/utils/lazyLoad'
 
 export default {
+    layout: 'pages',
     async asyncData({ $content, params }) {
         const articles = await getArticles($content, params)
 

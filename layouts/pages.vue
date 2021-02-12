@@ -6,6 +6,7 @@
       right
       width="300"
       temporary
+      color="rgba(27, 27, 27, 0.9)"
     >
       <v-list>
         <v-list-item-content>
@@ -31,11 +32,20 @@
       app
       height="60px"
       hide-on-scroll
+      elevation="0"
+      color="rgba(0, 0, 0, 0.3)"
     >
       <v-toolbar-title
         class="font-weight-black"
       >
-        Proyecto integrador
+        <nuxt-link 
+          :to="{ name: 'index' }"
+          :style="{
+            color: 'white'
+          }"
+        >
+          Proyecto integrador
+        </nuxt-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items
@@ -62,10 +72,15 @@
         </v-btn>
       </span>
     </v-app-bar>
-    <v-main>
+    <v-main class="pages-bg">
       <nuxt/>
     </v-main>
-    <v-footer padless app absolute>
+    <v-footer 
+      padless 
+      app 
+      absolute
+      color="rgba(0, 0, 0, 0.3)"
+    >
       <v-col
         class="text-center"
         cols="12"
@@ -107,3 +122,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.pages-bg {
+  background: url("../static/background_cdiferencial.png") no-repeat center center fixed;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+</style>

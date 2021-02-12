@@ -37,6 +37,7 @@
 
 <script>
 export default {
+    layout: 'pages',
     async asyncData({ $content, params }) {
         const article = await $content('articles', params.slug)
             .fetch()

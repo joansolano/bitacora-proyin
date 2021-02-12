@@ -3,7 +3,7 @@
         <v-container>
             <v-row align="center" justify="center" wrap>
                 <v-col cols="12" align="center" justify="center">
-                    <p class="text-h4 text-sm-h5 text-md-h4 text-xl-h3">Integrantes del equipo</p>
+                    <p class="text-h4 text-sm-h5 text-md-h4 text-lg-h3 font-weight-bold">Integrantes del equipo</p>
                 </v-col>
             </v-row>
             <v-row justify="center">
@@ -27,7 +27,13 @@
                         >
                         <v-card-title v-text="member.name" class="text-h5 text-xl-h3"></v-card-title>
                         <v-card-actions>
-                            <a :href="'mailto:' + member.email" class="text-xl-h5 ml-2 mb-2">
+                            <a 
+                                :href="'mailto:' + member.email" 
+                                class="text-xl-h5 ml-2 mb-2"
+                                :style="{
+                                    color: '#128F0E'
+                                }"
+                            >
                                 {{ member.email }}
                             </a>
                         </v-card-actions>
@@ -42,6 +48,7 @@
 import lazyLoad from '~/utils/lazyLoad'
 
 export default {
+    layout: 'pages',
     data() {
         return {
             team: [
@@ -52,12 +59,12 @@ export default {
                 },
                 {
                     name: 'Alejandro López Gómez',
-                    email: 'loquesea@gmail.com',
+                    email: 'alejandro-lope999@hotmail.com',
                     imgSrc: require('~/assets/team/avatar.webp')
                 },
                 {
                     name: 'Cristian Castañeda',
-                    email: 'juepucha@outlook.com',
+                    email: 'cristiancv2012@gmail.com',
                     imgSrc: require('~/assets/team/avatar.webp')
                 }
             ],
