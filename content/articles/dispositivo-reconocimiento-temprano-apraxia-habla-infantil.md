@@ -8,6 +8,7 @@ arrImgs: [
     sph0645.webp,
     sph0645.webp
 ]
+resEvi: []
 ---
 
 La apraxia del habla se trata de un transtorno poco común en el cual el niño tiene dificultad para articular palabras, debido a que al cerebro se le dificulta planificar el movimiento del habla.

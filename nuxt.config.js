@@ -50,7 +50,8 @@ export default {
         'faBars',
         'faAngleRight',
         'faAngleLeft',
-        'faArrowRight'
+        'faArrowRight',
+        'faDownload'
       ]
     }
   },
