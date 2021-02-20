@@ -7,7 +7,7 @@ arrImgs: []
 resEvi: []
 ---
 
-Luego de haber definido las distintas categorías en la <a href="https://cdiferencialcaj.web.app/blog/identificacion-preliminar-problema">actividad no. 2</a>, se procedió a buscar información en fuentes como Google y Youtube con respecto a estas categorías.
+Luego de haber definido las distintas categorías en la actividad no. 2, se procedió a buscar información en fuentes como Google y Youtube con respecto a estas categorías.
 
 Algunas de la fuentes son:
 
